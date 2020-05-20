@@ -26,7 +26,11 @@ body{
 }
 
 .pantalla{
-    background-color: rgb(252, 234, 72);
+    margin-top:11px;
+    margin-left:11px;
+    font-weight:700;
+    font-size:8px;
+    background-color: rgb(168, 255, 117);
     height:115px;
     width:225px;
     margin: 0 auto;
@@ -44,6 +48,7 @@ body{
     float:left;
 }
 .boton2{
+    
     margin-top: 44px;
     margin-left: 11px;
     height: 11px;
@@ -53,6 +58,7 @@ body{
     float:left;
 }
 .boton3{
+  
     margin-top: 11px;
     margin-left: 11px;
     height: 11px;
@@ -78,7 +84,7 @@ body{
     color:black;
     height:22px;
     width:22px;
-    background-color:rgb(173, 173, 173);
+    background-color:rgb(204, 202, 202);
     border-radius:5px;
     float:left;
 }
@@ -154,7 +160,7 @@ body{
     margin-left:6px;
     font-weight:700;
     font-size:8px;
-    color:white;
+    color:black;
 }
 .boxtarjeta{
     height:22px;
@@ -201,7 +207,17 @@ body{
     border-radius:5px;
     background-color:rgb(0, 0, 0);
 }
-
-
-
-
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);;
+}
+h2{
+    text-align: center;
+    color: rgb(255, 0, 0);
+}
+.cajita{
+   margin-left: 25px;
+}
+h3{
+    text-align: center;
+}
