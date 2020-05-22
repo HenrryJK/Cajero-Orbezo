@@ -3,6 +3,7 @@ class Usuario{
         this.password= password;
     };
     verificacion(){
+        /*alert(this.password);*/
         if (this.password=="080120") {
             return("La sesion se ha iniciado..")
         }else{
@@ -17,7 +18,7 @@ function logueo() {
         document.getElementById("pantalla1").style.display="none";
         document.getElementById("pantalla2").style.display="block";
     }else{
-        document.getElementById("mensaje").value=seguro;
+        document.getElementById("mensaje").innerHTML=seguro;
        
     }
 }
