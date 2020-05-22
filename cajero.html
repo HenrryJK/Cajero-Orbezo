@@ -4,59 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CajeroHenrry</title>
-    <link rel="Stylesheet" href="css/cajero.css">
+    <link rel="stylesheet" href="css/cajero.css">
 </head>
-<body onload="ejecutar();">
-     <br> <br> 
+<body>
     <div class="maqueta">
-        <div class="encabezado"></div>
-        <div class="izquierda">
-            <input class="boton2" type="button" value="" onclick="">
-            <input class="boton3" type="button" value="" onclick="">
-            <input class="boton3" type="button" value="" onclick="">
-            <input class="boton3" type="button" value="" onclick="">
-        </div>
-        <div class="derecha">
-            <input class="boton2" type="button" value="" onclick="">
-            <input class="boton3" type="button" value="" onclick="">
-            <input class="boton3" type="button" value="" onclick="">
-            <input class="boton3" type="button" value="" onclick="">
-        </div>
-        <div class="pantalla" id="m1">
-        <h1>Bienvenido al Banco!</h1>
-           <h2>Por favor digite su clave.</h2>
-           <input class="cajita" id="datos" type="password" placeholder="************">
-           <p id="mensaje"></p>
-        </div>
-    
-        <div class="encabezado2">
-            <div class="cajas1-1">
-            <input class="numeros" type="button" value="1" onclick="add(1)">
-            <input class="numeros" type="button" value="2" onclick="add(2)">
-            <input class="numeros" type="button" value="3" onclick="add(3)">
-            <input class="buttoncancelar" type="button" value="CANCEL" onclick="cancel();">
-            <div style="clear:both"></div>
-            <input class="numeros" type="button" value="4" onclick="add(4)">
-            <input class="numeros" type="button" value="5" onclick="add(5)">
-            <input class="numeros" type="button" value="6" onclick="add(6)">
-            <input class="buttonclear" type="button" value="CLEAR" onclick="">
-            <div style="clear:both"></div>
-            <input class="numeros" type="button" value="7" onclick="add(7)">
-            <input class="numeros" type="button" value="8" onclick="add(8)">
-            <input class="numeros" type="button" value="9" onclick="add(9)">
-            <input class="buttonok" type="button" value="OK" onclick="cambiar();">
-            <div style="clear:both"></div>
-            <input class="numeros" type="button" disabled>
-            <input class="numeros" type="button" value="0" onclick="add(0)">
-            <input class="numeros" type="button" value="." onclick="add()">
-            <input class="buttonblock" type="button" disabled>
+        <div class="cajas1">
+            <div class="cajita1-1">
+                <input class="boton1" type="button" onclick="" >
+                <input class="boton2" type="button" onclick="" >
+                <input class="boton2" type="button" onclick="" >
+                <input class="boton2" type="button" onclick="" >
             </div>
-            <div class="encabezado3">
-                <div class="boxtext1">
-                    <p class="texto">CARD</p>
+            <div class="cajita1-2">
+                <div id="pantalla">
+                    <div id="pantalla1">
+                        <p class="titulo1">¡BIEVENIDO AL CAJERO!</p>
+                        <p class="letra1">INGRESE SU CONTRASEÑA.</p>
+                        <input type="password" class="caja-password" id="datos" disabled>
+                        <p id="mensaje"></p>
+                    </div>
+                    <div id="pantalla2" style="display:none;">
+                        <p>Menu Principal</p>
+                        
+
+                    </div>
+                    <div id="pantalla3" style="display:none;">
+                        <p>ingresar monto de retiro en multiplos de 10</p>
+                    </div>
                 </div>
-                <div class="boxtext2">
-                    <p class="texto">RECEIPT</p>
+            </div>
+            <div class="cajita1-3">
+                <input class="boton3" type="button" onclick="" >
+                <input class="boton4" type="button" onclick="" >
+                <input class="boton4" type="button" onclick="" >
+                <input class="boton4" type="button" onclick="" >
+        </div>
+        <div class="cajas2">
+            <div class="cajita2-1">
+                <button class="numeros" id="num1">1</button>
+                <button class="numeros" id="num2">2</button>
+                <button class="numeros" id="num3">3</button>
+                <button class="botoncancel" id="cancel">CANCEL</button>
+                <div style="clear: both;"></div>
+                <button class="numeros" id="num4">4</button>
+                <button class="numeros" id="num5">5</button>
+                <button class="numeros" id="num6">6</button>
+                <button class="botonclear" id="clear">CLEAR</button>
+                <div style="clear: both;"></div>
+                <button class="numeros" id="num7">7</button>
+                <button class="numeros" id="num8">8</button>
+                <button class="numeros" id="num9">9</button>
+                <button class="botonok" id="ok" onclick="logueo()">OK</button>
+                <div style="clear: both;"></div>
+                <button class="numeros" disabled></button>
+                <button class="numeros" id="num0">0</button>
+                <button class="numeros" id="nump">.</button>
+                <button class="botonblock" disabled></button>
+            </div>
+            <div class="cajita2-2">
+                <div class="texto1">
+                    <p class="letras">CARD</p>
+                </div>
+                <div class="texto2">
+                    <p class="letras">RECEIPT</p>
                 </div>
                 <div style="clear: both;"></div>
                 <div class="boxtarjeta">
@@ -66,22 +76,22 @@
                     <div class="linea"></div>
                 </div>
                 <div style="clear: both;"></div>
-                <div class="boxtext1">
-                    <p class="texto">CASH</p>
+                <div class="texto1">
+                    <p class="letras">CASH</p>
                 </div>
                 <div style="clear: both;"></div>
                 <div class="boxcash">
                     <div class="linea2"></div>
                 </div>
                 <div style="clear: both;"></div>
-                <div class="boxtext1">
-                    <p class="texto">DEPOSIT</p>
+                <div class="texto1">
+                    <p class="letras">DEPOSIT</p>
                 </div>
                 <div style="clear: both;"></div>
-                <div class="boxdeposit">
+                <div class="boxcash">
                     <div class="linea2"></div>
                 </div>
-          </div>
+            </div>
         </div>
     </div>
     <script src="js/cajero.js"></script>
