@@ -9,23 +9,12 @@ body{
     margin:11px;
 }
 .maqueta{
-    background-color:rgb(124, 123, 123);
-    height:275px;
-    width:319px;
+    background-color:rgb(139, 136, 136);
+    height:290px;
+    width:322px;
     margin:0 auto;
     border-radius:20px;
     margin-top:80px;
-}
-#pantalla{
-    background-color: rgb(168, 255, 117);
-    margin: auto;
-    margin-top:11px;
-    width:221px;
-    height:111px;
-    border-radius:5px;
-    border-width:5px;
-    border-style:solid;
-    border-color:rgb(97, 96, 96);
 }
 .cajas1{
     height:132px;
@@ -35,8 +24,8 @@ body{
     height:143px;
     width:319px;
 }
-.derecho{
-   
+.cajita1-1{
+    
     height:132px;
     width:44px;
     float:left;
@@ -47,7 +36,7 @@ body{
     width:231px;
     float:left;
 }
-.izquierdo{
+.cajita1-3{
     
     height:132px;
     width:44px;
@@ -65,21 +54,20 @@ body{
     width:154px;
     float:left;
 }
-.numeros{
-    margin-top:11px;
+.numeros {
+    margin-top:15px;
     margin-left:11px;
     font-weight:800;
     font-size:12px;
-    color:black;
+    color:rgb(0, 195, 255);
     height:22px;
     width:22px;
-    background-color:rgb(204, 202, 202);
     border-radius:5px;
     float:left;
 }
 .botoncancel{
     margin-top:11px;
-    margin-right:10px;
+    margin-left:11px;
     font-weight:700;
     font-size:8px;
     color:white;
@@ -87,11 +75,11 @@ body{
     width:44px;
     background-color:red;
     border-radius:5px;
-    float:right;
+    float:left;
 }
 .botonclear{
     margin-top:11px;
-    margin-right:10px;
+    margin-left:11px;
     font-weight:700;
     font-size:8px;
     color:white;
@@ -99,74 +87,75 @@ body{
     width:44px;
     background-color:rgb(255, 166, 0);
     border-radius:5px;
-    float:right;
+    float:left;
 }
 .botonok{
     margin-top:11px;
-    margin-right:10px;
+    margin-left:11px;
     font-weight:700;
     font-size:8px;
     color:white;
     height:22px;
     width:44px;
-    background-color:rgb(129, 179, 55);
+    background-color:rgb(54, 219, 39);
     border-radius:5px;
-    float:right;
+    float:left;
 }
 .botonblock{
     margin-top:11px;
-    margin-right:10px;
+    margin-left:11px;
     font-weight:700;
     font-size:8px;
-    color:white;
+    color:rgb(0, 0, 0);
     height:22px;
     width:44px;
     background-color:rgb(116, 115, 115);
     border-radius:5px;
-    float:right;
+    float:left;
 }
+
 .boton1{
-    margin-top:44px;
+    margin-top:46px;
     margin-left:17px;
-    height:15px;
+    height:11px;
     width:22px;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(0, 0, 0);
     border-radius:3px;
     float:left;
 }
 .boton2{
-    margin-top:6px;
+    margin-top:11px;
     margin-left:17px;
-    height:15px;
+    height:11px;
     width:22px;
-    background-color: rgb(255, 255, 255);
+   background-color: rgb(0, 0, 0);
     border-radius:3px;
     float:left;
 }
 .boton3{
-    margin-top:44px;
-    margin-right:17px;
-    height:15px;
+    margin-top:46px;
+    margin-left:10px;
+    height:11px;
     width:22px;
-    background-color: rgb(255, 251, 251);
+    background-color: rgb(0, 0, 0);
     border-radius:3px;
-    float: right;
+    float:left;
 }
 .boton4{
-    margin-top:6px;
-    margin-right:17px;
-    height:15px;
+    margin-top:11px;
+    margin-left:10px;
+    height:11px;
     width:22px;
-    background-color:rgb(255, 255, 255) ;
+    background-color: rgb(0, 0, 0);
     border-radius:3px;
-    float:right;
+    float:left;
 }
 .texto1{
     margin-top:11px;
     color:white;
     height:11px;
     width:66px;
-    
+   
     float: left;
 }
 .texto2{
@@ -174,42 +163,57 @@ body{
     margin-left:11PX;
     height:11px;
     width:66px;
+    
     float: left;
 }
 .caja-password{
-   
-   margin-top: 15px;
+    border-color:rgb(248, 248, 248);
     border-width:2px;
-    margin-left:25px;
+}
+.cajita-monto{
+    border-color:rgb(255, 255, 255);
+    
+    border-width:2px;
+    width:50px;
 }
 .letras{
     margin-top:2px;
     margin-left:6px;
     font-weight:700;
     font-size:8px;
-    color:rgb(252, 249, 249);
+    color:white;
 }
 .titulo1{
     text-align: center;
-    margin-top: 10px;
-    margin-left:10px;
+    margin-top: 8.5px;
     font-size:12px;
     color:black;
-    
+   
 }
-.letra1{
+.letras1{
     text-align: center;
-    margin-top: 5px;
-    margin-left:10px;
-    font-size:12px;
+    margin-top: 10px;
+    font-size:10px;
     color:black;
+   
+}
+.letra-op{
+    margin-top: -2px;
+    margin-left: 5px;
+    font-size:10px;
+    color:rgb(0, 0, 0);
+   
+}
+.letra-error{
+    font-size:10px;
+    color:rgb(0, 0, 0);
     
 }
 .boxtarjeta{
     height:22px;
     width:66px;
     border-radius:5px;
-    background-color:rgb(88, 88, 88);
+    background-color:rgb(102, 72, 72);
     float: left;
 }
 .boxrecibo{
@@ -217,14 +221,14 @@ body{
     height:22px;
     width:66px;
     border-radius:5px;
-    background-color:rgb(88, 88, 88);
+    background-color:rgb(102, 72, 72);
     float: left;
 }
 .boxcash{
     height:22px;
     width:143px;
     border-radius:5px;
-    background-color:rgb(88, 88, 88);
+    background-color:rgb(102, 72, 72);
     float: left;
 }
 .linea{
@@ -240,60 +244,16 @@ body{
     margin-left:11px;
     height:3px;
     width:121px;
-    border-radius:6px;
+    border-radius:5px;
     background-color:rgb(0, 0, 0);
 }
-.titulo2{
-    text-align: center;
-    margin-top: 10px;
-    margin-left:10px;
-    font-size:12px;
-    color:black;
-    
-}
-.titulo3{
-    text-align: center;
-    margin-top: 10px;
-    margin-left:10px;
-    font-size:12px;
-    color:black;
-}
-.opcion{
-    font-size: 3px;
-}
-.L1{
-    margin-top: 3px;
-    font-size: 15px;
-}
-.L2{
-    font-size: 14px;
-    margin-top: -15px;
-    float: right;
-}
-.L3{
-    font-size: 14px;
-    margin-top: 3.9px;
-}
-.L4{
-    font-size: 14px;
-    margin-top: 3.6px;
-}
-.L5{
-    font-size: 14px;
-    margin-top: -15px;
-    float: right;
-}
-.L6{
-    margin-top: 3.9px;
-    font-size: 12px;
-}
-.L7{
-    margin-top: -13px;
-    font-size: 12px;
-    float: right;
-}
-.L8{
-    font-size: 13px;
-    margin-left: 168px;
-    margin-top: 49px;
+#pantallas{
+    background-color: rgb(179, 233, 98);
+    margin-top:11px;
+    width:226px;
+    height:111px;
+    border-radius:5px;
+    border-width:5px;
+    border-style:solid;
+    border-color:rgb(97, 96, 96);
 }

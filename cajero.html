@@ -9,76 +9,252 @@
 </head>
 <body>
     <div class="maqueta">
-        <div class="cajas1">
-            <div class="izquierdo" id="pantalla4">
-                <button class="boton1" onclick="retiros()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-                <button class="boton2" onclick="retiros2()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-                <button class="boton2"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-                <button class="boton2"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+        <div class="cajas1" id="pantalla1">
+            <div class="cajita1-1">
+                <input class="boton1" type="button">
+                <input class="boton2" type="button">
+                <input class="boton2" type="button">
+                <input class="boton2" type="button">
             </div>
             <div class="cajita1-2">
-                <div id="pantalla">
-                    <div id="pantalla1">
-                        <p class="titulo1">¡BIEVENIDO AL CAJERO!</p>
-                        <p class="letra1">INGRESE SU CONTRASEÑA.</p>
-                        <input type="password" class="caja-password" id="datos" disabled >
-                        <p id="mensaje"></p>
-                    </div>
-                    <div id="pantalla2" style="display:none;">
-                        <p class="titulo2">Menu Principal
-                         <div class="L1">Retiro</div>
-                         <div class="L2">Transferencia</div>
-                         <div class="L3">Consulta</div>
-                         <div class="L4">Operaciones</div>
-                         <div class="L5">Ultimo momentos</div>
-                    </div>
-                    <div id="pantalla3" style="display:none;">
-                        <p class="titulo3">RETIRO
-                            <div class="L6">RETIRO SOLES</div>
-                            <div class="L7"> RETIRAR DOLARES</div>
-                            <div class="L8">Cancelar</div>
-
-                        </p>
-                    <div id="pantalla4" style="display: none;">
-                       <p class="titulo4"> RETIRO
-                           <div class="L9">S/.20</div>
-                           <div class="L10">S/.150</div>
-                           <div class="L11">S/.300</div>
-                           <div class="L12">S/.100</div>
-                           <div class="L13">S/.200</div>
-                           <div class="L14">Otras cantidades</div>
-                           <div class="L8">Cancelar</div>
-                       </p>  
-                    </div>
-
-                    <div id="pantalla5" style="display: none;">
-                        <p class="titulo4"> INGRESAR MONTO A RETIRAR EN MULTIPLO DE 10
-                            <input class="L15" type="text" disabled>
-                            <div class="L16">CONFIRMAR</div>
-                            <div class="L17">CORREGIR</div>
-                            <div class="L8">Cancelar</div>
-                        </p>  
-                     </div>
-
-                     <div id="pantalla6" style="display: none;">
-                        <p class="titulo4"> TRANSACCION PROCESADA
-                            <div class="L16">¿DESEA REALIZAR OTRA TRANSACCION?</div>
-                            <div class="L17">SI</div>
-                            <div class="L8">NO</div>
-                        </p>  
-                     </div>
-
+                <div id="pantallas">
+                    <div>
+                        <p class="titulo1" style="margin-left:10px;">¡BIENVENIDO AL CAJERO!</p>
+                        <p class="letras1" style="margin-left:10px;">INGRESE LA CLAVE</p>
+                        <input type="password" class="caja-password" id="datos" style="margin-left:10px;" disabled>
+                        <p class="letra-error" id="inicio" style="margin-left:10px;"></p>
                     </div>
                 </div>
             </div>
-            <div class="derecho">
-                <button class="boton3"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
-                <button class="boton4"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
-                <button class="boton4"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
-                <button class="boton4"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+            <div class="cajita1-3">
+                <input class="boton3" type="button">
+                <input class="boton4" type="button">
+                <input class="boton4" type="button">
+                <input class="boton4" type="button">
+            </div>
+        </div>
+        <div class="cajas1" style="display:none;" id="pantalla2">
+            <div class="cajita1-1">
+                <input class="boton1" type="button" onclick="retiros()"/>
+                <input class="boton2" type="button" onclick="consulta()"/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+            </div>
+            <div class="cajita1-2">
+                <div id="pantallas">
+                    <div>
+                        <div class="titulo1" style="height:11px;width:99px;margin:auto;">Menu Principal</div>
+                        <div style="height:15px;width:221px;"></div>
+                        <div style="width:85px;height:85px;float:left;">
+                            <p class="letra-op"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i> RETIRO</p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i> CONSULTAS</p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i> OPERACIONES</p>
+                            <P class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></P>
+                        </div>
+                        <div style="width:136px;height:85px;float:left;text-align:right;">
+                            <p class="letra-op">TRANSFERENCIA <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;">ULTIMOS MOVIMIENTOS <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cajita1-3">
+                <input class="boton3" type="button" onclick="" />
+                <input class="boton4" type="button" onclick="" />
+                <input class="boton4" type="button" onclick="" />
+                <input class="boton4" type="button" onclick="" />
+            </div>
+        </div>
+        <div class="cajas1" style="display:none;" id="pantalla3">
+            <div class="cajita1-1">
+                <input class="boton1" type="button" onclick="retiros2()"/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+            </div>
+            <div class="cajita1-2">
+                <div id="pantallas">
+                    <div>
+                        <div class="titulo1" style="height:11px;width:41px;margin:auto;">Retiro</div>
+                        <div style="height:15px;width:221px;"></div>
+                        <div style="width:85px;height:85px;float:left;">
+                            <p class="letra-op"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i> RETIRO SOLES</p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <P class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></P>
+                        </div>
+                        <div style="width:136px;height:85px;float:left;text-align:right;">
+                            <p class="letra-op">RETIRO DOLARES <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;">CANCELAR <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cajita1-3">
+                <input class="boton3" type="button" onclick="" />
+                <input class="boton4" type="button" onclick="" />
+                <input class="boton4" type="button" onclick="" />
+                <input class="boton4" type="button" onclick="" />
+            </div>
+        </div>
+        <div class="cajas1" style="display:none;" id="pantalla4">
+            <div class="cajita1-1">
+                <input class="boton1" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+            </div>
+            <div class="cajita1-2">
+                <div id="pantallas">
+                    <div>
+                        <div class="titulo1" style="height:11px;width:41px;margin:auto;">Retiro</div>
+                        <div style="height:15px;width:221px;"></div>
+                        <div style="width:85px;height:85px;float:left;">
+                            <p class="letra-op"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i>S/.20</p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i>S/.150</p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i> S/. 300</p>
+                            <P class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></P>
+                        </div>
+                        <div style="width:136px;height:85px;float:left;text-align:right;">
+                            <p class="letra-op">S/. 100 <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;">S/. 200<i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;">OTRAS CANTIDADES<i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;">CANCELAR <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cajita1-3">
+                <input class="boton3" type="button" onclick="" />
+                <input class="boton4" type="button" onclick="" />
+                <input class="boton4" type="button" onclick="retiros3()" />
+                <input class="boton4" type="button" onclick="" />
+            </div>
+        </div>
+        <div class="caja1" style="display:none;" id="pantalla5">
+            <div class="cajita1-1">
+                <input class="boton1" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+            </div>
+            <div class="cajita1-2">
+                <div id="pantallas">
+                    <div>
+                        <div class="titulo1" style="height:11px;width:196px;margin:auto;">INGRESE MONTO A RETIRAR EN</div>
+                        <div class="titulo1" style="height:11px;width:112px;margin:auto;">MULTIPLOS DE 10</div>
+                        <div class="letras1" style="height:5px;width:221px;margin-left:69px;margin-top:10px;">
+                            S/.<input type="text" class="cajita-monto" id="montos">
+                        </div>
+                        <div style="width:80px;height:85px;float:left;">
+                            <p class="letra-op"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;margin-top:12px;"></i></p>
+                            <p class="letra-op" style="margin-top:5px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></p>
+                        </div>
+                        <div style="width:61px;height:85px;float:left;text-align:center;">
+                            <p class="letra-error" id="pantalla-error" style="margin-top:20px;"></p>
+                        </div>
+                        <div style="width:80px;height:85px;float:left;text-align:right;">
+                            <p class="letra-op">CONFIRMAR <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;margin-top:12px;"></i></p>
+                            <p class="letra-op" style="margin-top:5px;">CORREGIR <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;">CANCELAR <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cajita1-3">
+                <input class="boton3" type="button" onclick=""/>
+                <input class="boton4" type="button" onclick="retiro_edit()"/>
+                <input class="boton4" type="button" onclick="cancel2()"/>
+                <input class="boton4" type="button" onclick=""/>
+            </div>
+        </div>
+        <div class="cajas1" style="display:none;" id="pantalla6">
+            <div class="cajita1-1">
+                <input class="boton1" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+            </div>
+            <div class="cajita1-2">
+                <div id="pantallas">
+                    <div>
+                        <div class="titulo1" style="height:11px;width:221px;">
+                            <p class="titulo1" style="margin-left:25px;">TRANSACCION PROCESADA</p>
+                        </div>
+                        <div style="height:16px;width:221px;margin-top:7px;text-align:center;">
+                            <P class="letra-op">¿DESEA REALIZAR OTRA</P>
+                            <p class="letra-op">TRANSACCION?</p>
+                        </div>
+                        <div style="width:80px;height:85px;float:left;">
+                            <p class="letra-op"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;margin-top:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:5px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></p>
+                        </div>
+                        <div style="width:61px;height:85px;float:left;text-align:center;">
+                            <p class="letra-error" id="pantalla-error" style="margin-top:20px;"></p>
+                        </div>
+                        <div style="width:80px;height:85px;float:left;text-align:right;">
+                            <p class="letra-op"><i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;margin-top:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:5px;">SI <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;">NO <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cajita1-3">
+                <input class="boton3" type="button" onclick=""/>
+                <input class="boton4" type="button" onclick=""/>
+                <input class="boton4" type="button" onclick="retiro_otravez()"/>
+                <input class="boton4" type="button" onclick="retirofinish()"/>
+            </div>
+        </div>
+        <div class="cajas1" style="display:none;" id="pantalla7">
+            <div class="cajita1-1">
+                <input class="boton1" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+                <input class="boton2" type="button" onclick=""/>
+            </div>
+            <div class="cajita1-2">
+                <div id="pantallas">
+                    <div>
+                        <div class="titulo1" style="height:11px;width:221px;">
+                            <p class="titulo1" style="margin-left:25px;"></p>
+                        </div>
+                        <div style="height:16px;width:221px;margin-top:7px;text-align:center;">
+                            <P class="letra-op">MUCHAS GRACIAS.....</P>
+                            <p class="letra-op">HASTA PRONTO...</p>
+                        </div>
+                        <div style="width:100px;height:85px;float:left;">
+                            <p class="letra-op"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;margin-top:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:5px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;"><i class="fa fa-caret-right" aria-hidden="true" style="font-size:15px;"></i></p>
+                        </div>
+                        <div style="width:21px;height:85px;float:left;text-align:center;">
+                            <p class="letra-error" id="pantalla-error" style="margin-top:20px;"></p>
+                        </div>
+                        <div style="width:100px;height:85px;float:left;text-align:right;">
+                            <p class="letra-op"><i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;margin-top:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:5px;"> <i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                            <p class="letra-op" style="margin-top:6px;">VOLVER AL INICIO<i class="fa fa-caret-left" aria-hidden="true" style="font-size:15px;"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cajita1-3">
+                <input class="boton3" type="button" onclick=""/>
+                <input class="boton4" type="button" onclick=""/>
+                <input class="boton4" type="button" onclick=""/>
+                <input class="boton4" type="button" onclick="retiro_d_menu()"/>
+            </div>
         </div>
         <div class="cajas2">
-            <div class="cajita2-1">
+            <div class="cajita2-1" id="teclado1">
                 <button class="numeros" id="num1">1</button>
                 <button class="numeros" id="num2">2</button>
                 <button class="numeros" id="num3">3</button>
@@ -97,6 +273,27 @@
                 <button class="numeros" disabled></button>
                 <button class="numeros" id="num0">0</button>
                 <button class="numeros" id="nump">.</button>
+                <button class="botonblock" disabled></button>
+            </div>
+            <div class="cajita2-1" id="teclado2" style="display:none;">
+                <button class="numeros" id="num1_1">1</button>
+                <button class="numeros" id="num2_2">2</button>
+                <button class="numeros" id="num3_3">3</button>
+                <button class="botoncancel" id="cancel2" onclick="cancel2()">CANCEL</button>
+                <div style="clear: both;"></div>
+                <button class="numeros" id="num4_4">4</button>
+                <button class="numeros" id="num5_5">5</button>
+                <button class="numeros" id="num6_6">6</button>
+                <button class="botonclear" id="clear2" onclick="cancel2()">CLEAR</button>
+                <div style="clear: both;"></div>
+                <button class="numeros" id="num7_7">7</button>
+                <button class="numeros" id="num8_8">8</button>
+                <button class="numeros" id="num9_9">9</button>
+                <button class="botonok" id="ok_2" onclick="">OK</button>
+                <div style="clear: both;"></div>
+                <button class="numeros" disabled></button>
+                <button class="numeros" id="num0_0">0</button>
+                <button class="numeros" id="nump_p">.</button>
                 <button class="botonblock" disabled></button>
             </div>
             <div class="cajita2-2">
