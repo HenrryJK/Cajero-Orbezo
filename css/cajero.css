@@ -257,5 +257,39 @@ body{
     margin-left:10px;
     font-size:12px;
     color:black;
-    
+}
+.opcion{
+    font-size: 3px;
+}
+.L1{
+    margin-top: 3px;
+    font-size: 15px;
+}
+.L2{
+    font-size: 14px;
+    margin-top: -15px;
+    float: right;
+}
+.L3{
+    font-size: 14px;
+    margin-top: 3.9px;
+}
+.L4{
+    font-size: 14px;
+    margin-top: 3.6px;
+}
+.L5{
+    font-size: 14px;
+    margin-top: -15px;
+    float: right;
+}
+.letras-opciones{
+    font-size:10px;
+    color:rgb(85, 42, 11);
+    font-family: 'Black Ops One', cursive;
+}
+.letras-pantalla{
+    font-size:10px;
+    color:black;
+    font-family: 'Black Ops One', cursive;
 }

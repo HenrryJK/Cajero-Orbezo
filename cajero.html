@@ -21,14 +21,16 @@
                     <div id="pantalla1">
                         <p class="titulo1">¡BIEVENIDO AL CAJERO!</p>
                         <p class="letra1">INGRESE SU CONTRASEÑA.</p>
-                        <input type="password" class="caja-password" id="datos">
+                        <input type="password" class="caja-password" id="datos" >
                         <p id="mensaje"></p>
                     </div>
                     <div id="pantalla2" style="display:none;">
                         <p class="titulo2">Menu Principal
-                         
-                        </p>
-                        
+                         <div class="L1">Retiro</div>
+                         <div class="L2">Transferencia</div>
+                         <div class="L3">Consulta</div>
+                         <div class="L4">Operaciones</div>
+                         <div class="L5">Ultimo momentos</div>
                     </div>
                     <div id="pantalla3" style="display:none;">
                         <p class="titulo3">ingresar monto de retiro en multiplos de 10</p>
@@ -46,12 +48,12 @@
                 <button class="numeros" id="num1">1</button>
                 <button class="numeros" id="num2">2</button>
                 <button class="numeros" id="num3">3</button>
-                <button class="botoncancel" id="cancel">CANCEL</button>
+                <button class="botoncancel" id="cancel" onclick="cancel()">CANCEL</button>
                 <div style="clear: both;"></div>
                 <button class="numeros" id="num4">4</button>
                 <button class="numeros" id="num5">5</button>
                 <button class="numeros" id="num6">6</button>
-                <button class="botonclear" id="clear">CLEAR</button>
+                <button class="botonclear" id="clear" onclick="cancel()">CLEAR</button>
                 <div style="clear: both;"></div>
                 <button class="numeros" id="num7">7</button>
                 <button class="numeros" id="num8">8</button>

@@ -11,6 +11,12 @@ class Usuario{
         }
     };
 };
+
+
+function cancel(){
+    var elemento = document.getElementById("datos");
+    elemento.value = "";
+}
 function logueo() {
     var usuario= new Usuario(document.getElementById("datos").value);
     var seguro=usuario.verificacion();
