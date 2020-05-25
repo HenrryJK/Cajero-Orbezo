@@ -7,7 +7,7 @@ class User{
 };
 var datos=[];
 function verificar() {
-    var user=new User("080120",9500);
+    var user=new User("080120",9900);
     datos.push(user);
 }
 function logueo() {
