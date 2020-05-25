@@ -28,6 +28,15 @@ function logueo() {
        
     }
 }
+function retiros() {
+    document.getElementById("pantalla2").style.display="none";
+    document.getElementById("pantalla3").style.display="block";
+}
+function retiros2() {
+    document.getElementById("pantalla3").style.display="none";
+    document.getElementById("pantalla4").style.display="block";
+}
+
 document.getElementById("num1").addEventListener("click", num1);
 function num1(){
     let sumado=document.getElementById("num1").innerHTML;

@@ -283,13 +283,17 @@ body{
     margin-top: -15px;
     float: right;
 }
-.letras-opciones{
-    font-size:10px;
-    color:rgb(85, 42, 11);
-    font-family: 'Black Ops One', cursive;
+.L6{
+    margin-top: 3.9px;
+    font-size: 12px;
 }
-.letras-pantalla{
-    font-size:10px;
-    color:black;
-    font-family: 'Black Ops One', cursive;
+.L7{
+    margin-top: -13px;
+    font-size: 12px;
+    float: right;
+}
+.L8{
+    font-size: 13px;
+    margin-left: 168px;
+    margin-top: 49px;
 }

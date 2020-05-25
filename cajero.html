@@ -10,9 +10,9 @@
 <body>
     <div class="maqueta">
         <div class="cajas1">
-            <div class="izquierdo">
-                <button class="boton1"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-                <button class="boton2"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+            <div class="izquierdo" id="pantalla4">
+                <button class="boton1" onclick="retiros()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+                <button class="boton2" onclick="retiros2()"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                 <button class="boton2"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
                 <button class="boton2"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
             </div>
@@ -21,7 +21,7 @@
                     <div id="pantalla1">
                         <p class="titulo1">¡BIEVENIDO AL CAJERO!</p>
                         <p class="letra1">INGRESE SU CONTRASEÑA.</p>
-                        <input type="password" class="caja-password" id="datos" >
+                        <input type="password" class="caja-password" id="datos" disabled >
                         <p id="mensaje"></p>
                     </div>
                     <div id="pantalla2" style="display:none;">
@@ -33,7 +33,41 @@
                          <div class="L5">Ultimo momentos</div>
                     </div>
                     <div id="pantalla3" style="display:none;">
-                        <p class="titulo3">ingresar monto de retiro en multiplos de 10</p>
+                        <p class="titulo3">RETIRO
+                            <div class="L6">RETIRO SOLES</div>
+                            <div class="L7"> RETIRAR DOLARES</div>
+                            <div class="L8">Cancelar</div>
+
+                        </p>
+                    <div id="pantalla4" style="display: none;">
+                       <p class="titulo4"> RETIRO
+                           <div class="L9">S/.20</div>
+                           <div class="L10">S/.150</div>
+                           <div class="L11">S/.300</div>
+                           <div class="L12">S/.100</div>
+                           <div class="L13">S/.200</div>
+                           <div class="L14">Otras cantidades</div>
+                           <div class="L8">Cancelar</div>
+                       </p>  
+                    </div>
+
+                    <div id="pantalla5" style="display: none;">
+                        <p class="titulo4"> INGRESAR MONTO A RETIRAR EN MULTIPLO DE 10
+                            <input class="L15" type="text" disabled>
+                            <div class="L16">CONFIRMAR</div>
+                            <div class="L17">CORREGIR</div>
+                            <div class="L8">Cancelar</div>
+                        </p>  
+                     </div>
+
+                     <div id="pantalla6" style="display: none;">
+                        <p class="titulo4"> TRANSACCION PROCESADA
+                            <div class="L16">¿DESEA REALIZAR OTRA TRANSACCION?</div>
+                            <div class="L17">SI</div>
+                            <div class="L8">NO</div>
+                        </p>  
+                     </div>
+
                     </div>
                 </div>
             </div>
